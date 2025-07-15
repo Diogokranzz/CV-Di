@@ -1,0 +1,10 @@
+# Arquivo para guardar segredos, NUNCA enviar para o GitHub
+.env
+
+# Pastas de cache do Python
+__pycache__/
+*.pyc
+
+# Arquivos de ambiente virtual
+.venv
+venv
