@@ -1,6 +1,0 @@
-requests
-pydantic
-pika
-redis
-beautifulsoup4
-litellm

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio // Diogo Kranz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="boot-loader">
+        <div id="boot-sequence"></div>
+        <div class="progress-bar-container">
+            <div id="progress-bar"></div>
+        </div>
+        <div id="access-message"></div>
+    </div>
+
+    <div id="main-content" style="display: none;">
+        <canvas id="matrix-background"></canvas>
+        <header>
+            <h1 id="typing-animation"></h1>
+        </header>
+
+        <nav class="side-nav">
+            <a href="#about" title="Perfil"><span>// Perfil</span></a>
+            <a href="#skills" title="Competências"><span>// Competências</span></a>
+            <a href="#career" title="Carreira"><span>// Carreira</span></a>
+            <a href="#projects" title="Projetos"><span>// Projetos</span></a>
+            <a href="#data-stream" title="Data Stream"><span>// Data Stream</span></a>
+        </nav>
+
+        <main>
+            <section id="about">
+                <h2 class="reveal">// Perfil</h2>
+                <div class="bio-content">
+                    <div class="profile-picture">
+                        <img src="/Rosto.jpg" alt="Foto de perfil de Diogo Kranz">
+                    </div>
+                    <p>
+                        Estudante de Análise e Desenvolvimento de Sistemas com grande interesse em programação e arquitetura de software. Curioso e proativo, busco uma oportunidade de estágio para aplicar e expandir minhas habilidades em um ambiente profissional, contribuindo para projetos inovadores e aprendendo com profissionais experientes.
+                    </p>
+                </div>
+            </section>
+
+            <section id="skills">
+                <h2 class="reveal">// Competências</h2>
+                <div class="skills-grid">
+                    <div class="skill-card"><i class="fab fa-python"></i> Python</div>
+                    <div class="skill-card"><i class="fab fa-js-square"></i> JavaScript</div>
+                    <div class="skill-card"><i class="fab fa-html5"></i> HTML5</div>
+                    <div class="skill-card"><i class="fab fa-css3-alt"></i> CSS3</div>
+                    <div class="skill-card"><i class="fas fa-database"></i> SQL</div>
+                    <div class="skill-card"><i class="fab fa-git-alt"></i> Git</div>
+                    <div class="skill-card"><i class="fab fa-figma"></i> Figma</div>
+                    <div class="skill-card"><i class="fas fa-camera-retro"></i> Photoshop</div>
+                </div>
+            </section>
+
+            <section id="career">
+                <h2 class="reveal">// Carreira</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Estágio, Engenharia de Dados e IA - Indicium</h3>
+                            <p class="timeline-date">// Abril 2025 - Presente</p>
+                            <p>Atuo na manutenção e evolução da ferramenta de IA Generativa da empresa, que impacta mais de 200 colaboradores. Desenvolvo agentes inteligentes com LangGraph, crio pipelines de dados (ETL) orquestrados com Airflow e implemento funcionalidades no frontend com Next.js e TypeScript, garantindo a estabilidade e o aprimoramento contínuo do sistema através de práticas de LLMOps e monitoramento.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Graduação em Análise e Desenvolvimento de Sistemas</h3>
+                            <p class="timeline-date">// Julho 2024 - Dezembro 2026</p>
+                            <p>Universidade Anhembi Morumbi – São Paulo. Curso com foco em desenvolvimento científico, aplicações para internet, arquitetura de computadores e banco de dados.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects">
+                <h2 class="reveal">// Projetos</h2>
+                <div class="project-tree">
+                    <div class="project-item" data-title="Sistema Bancário" data-description="Simulação de um sistema bancário simples em Python, permitindo operações como depósito, saque e extrato.">
+                        <a href="https://github.com/Diogokranzz/Sistema-Banc-rio.py" target="_blank" rel="noopener noreferrer">Sistema-Banc-rio.py</a>
+                    </div>
+                    <div class="project-item" data-title="MCP Agent" data-description="Um agente de IA para automação de tarefas de desenvolvimento, utilizando um protocolo customizado para gerenciar a comunicação entre processos.">
+                        <a href="https://github.com/Diogokranzz/MCP-AGENT" target="_blank" rel="noopener noreferrer">MCP-AGENT</a>
+                    </div>
+                    <div class="project-item" data-title="Status Flight" data-description="Aplicação para consulta de status de voos em tempo real, utilizando APIs públicas para obter e exibir informações atualizadas.">
+                        <a href="https://github.com/Diogokranzz/StatusFlight" target="_blank" rel="noopener noreferrer">StatusFlight</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="data-stream">
+                <h2 class="reveal">// DATA_STREAM</h2>
+                <div class="data-stream-container">
+                    <div class="scanner-line"></div>
+                    <div class="data-node">
+                        <span class="node-label">NODE_PROFILE:</span>
+                        <span class="node-value" data-text="Estudante de Análise e Desenvolvimento de Sistemas com foco em arquitetura de software."></span>
+                    </div>
+                    <div class="data-node">
+                        <span class="node-label">NODE_SKILLS_PRIMARY:</span>
+                        <span class="node-value" data-text="Python, JavaScript, SQL, Git."></span>
+                    </div>
+                    <div class="data-node">
+                        <span class="node-label">NODE_PROJECTS_FEATURED:</span>
+                        <span class="node-value" data-text="MCP Agent, Status Flight, Sistema Bancário."></span>
+                    </div>
+                    <div class="data-node">
+                        <span class="node-label">NODE_CONTACT_EMAIL:</span>
+                        <span class="node-value" data-text="diogokranz11@gmail.com"></span>
+                    </div>
+                    <div class="data-node">
+                        <span class="node-label">NODE_STATUS:</span>
+                        <span class="node-value" data-text="Buscando oportunidade de estágio em desenvolvimento."></span>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <div class="contact-links">
+                <a href="https://github.com/DiogoKranzz" target="_blank" title="GitHub"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://www.linkedin.com/in/diogo-kranz-490465307" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="mailto:diogokranz11@gmail.com" title="Email"><i class="fas fa-envelope"></i> Email</a>
+            </div>
+        </footer>
+
+        <div id="project-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h3 id="modal-title"></h3>
+                <p id="modal-description"></p>
+                <a id="modal-link" href="#" target="_blank" rel="noopener noreferrer">Ver no GitHub &gt;</a>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
